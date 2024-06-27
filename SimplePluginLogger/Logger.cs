@@ -4,7 +4,7 @@ using System.IO;
 
 namespace SimplePluginLogger
 {
-    public static class PluginLogger
+    public static class Logger
     {
         private static string logFilePath = Path.GetTempFileName();
         public static string LogFilePath { get => logFilePath; }

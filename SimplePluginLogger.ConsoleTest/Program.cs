@@ -10,8 +10,8 @@ namespace SimplePluginLogger.ConsoleTest
     {
         static void Main(string[] args)
         {
-            PluginLogger.Log("test1");
-            PluginLogger.OpenLogFile();
+            Logger.Log("test1");
+            Logger.OpenLogFile();
         }
     }
 }
