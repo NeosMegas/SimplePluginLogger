@@ -13,9 +13,10 @@ namespace SimplePluginLogger.nUnitTest
         [TestCase("test1")]
         public void Test1(string s)
         {
-            Logger.Log(s);
+            Logger logger = new Logger();
+            logger.Log(s);
             //PluginLogger.OpenLogFile();
-            Debug.WriteLine(Logger.LogFilePath);
+            Debug.WriteLine(logger.LogFilePath);
             Assert.Pass();
         }
     }
