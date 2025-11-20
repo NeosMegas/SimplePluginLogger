@@ -38,6 +38,9 @@ namespace SimplePluginLogger
         /// <summary>
         /// Открыть временный файл (например, в блокноте)
         /// </summary>
-        public void OpenLogFile() => Process.Start(LogFilePath);
+        public void OpenLogFile()
+        {
+            Process.Start(new ProcessStartInfo(LogFilePath) { UseShellExecute = true });
+        }
     }
 }
